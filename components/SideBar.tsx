@@ -4,9 +4,8 @@ import NewChat from "./NewChat"
 import Image from "next/image";
 import { useCollection } from "react-firebase-hooks/firestore";
 import { collection, orderBy, query } from "firebase/firestore";
-import { db } from "../firebase";
+import { db } from "@/firebase";
 import ChatRow from "./ChatRow";
-import { usePathname } from "next/navigation";
 import ModelSelection from "./ModelSelection";
 
 function SideBar() {
