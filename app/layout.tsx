@@ -21,13 +21,12 @@ export default async function RootLayout({
       <body>
 
 
-<!--       <SessionProvider session={session}> -->
-<!--         {!session ? (
+      <SessionProvider session={session}>
+        {!session ? (
             <Login />
-        ) : ( -->
+        ) : (
       
-        if (session) {
-          return (
+        
             <div className="flex">
               {/* Sidebar */}
               <div className="bg-gradient-to-t from-black to-[#4d4e57] max-w-xs h-screen overflow-y-auto md:min-w-[20rem]">
@@ -39,13 +38,8 @@ export default async function RootLayout({
 
               <div className="bg-[#343541] flex-1">{children}</div>
             </div>
-            );
-          } else {
-            return (
-              <Login />
-              );
-          }
-<!-- )} -->
+            
+          )}
 
 
 
