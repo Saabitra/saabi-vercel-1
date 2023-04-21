@@ -21,7 +21,7 @@ export default async function RootLayout({
       <body>
 
 
-      <SessionProvider session={session}>
+<!--       <SessionProvider session={session}> -->
 <!--         {!session ? (
             <Login />
         ) : ( -->
