@@ -11,7 +11,7 @@ function Login() {
       height={150}
       alt="Mask Logo"
     />
-    <button onClick={()=>signIn("google")} className="text-white font-semibold hover:animate-none text-3xl animate-pulse">
+    <button onClick={()=>signIn()} className="text-white font-semibold hover:animate-none text-3xl animate-pulse">
       Sign In to use SAABI AI
     </button>
   </div>
